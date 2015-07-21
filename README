@@ -1,0 +1,10 @@
+There was discussion in #ada about dependent types, and suddenly question came
+up: "Is it possible in Ada to define type Open_File, for which the only valid
+values are File_Types which are Open?" [i.e.: Is_Open (File) = True].
+Turns out yes, it is possible.
+
+"Idea is worth thousand solutions."
+This is just an idea of implementation than actual implementation of IO package
+but it shows a way in which it can be done.
+
+Further refinements may be needed to make it easier to use.
