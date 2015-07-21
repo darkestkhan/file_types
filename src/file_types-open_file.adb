@@ -7,10 +7,11 @@ package body File_Types.Open_File is
     return True;
   end Is_Open;
 
-  function Close (File : Open_File) return File_Types.Closed_File.Closed_File
+  function Close (File : Open_File) return File_Types.File_Type'Class
   is
+    pragma Unreferenced (File);
   begin
-    return X: File_Types.Closed_File.Closed_File do
+    return X: File_Types.File_Type do
       null;
     end return;
   end Close;

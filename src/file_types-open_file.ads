@@ -1,4 +1,3 @@
-limited with File_Types.Closed_File;
 package File_Types.Open_File is
 
   type Open_File is new File_Type with private
@@ -6,7 +5,7 @@ package File_Types.Open_File is
 
   function Is_Open (File : Open_File) return Boolean;
 
-  function Close (File : Open_File) return File_Types.Closed_File.Closed_File;
+  function Close (File : Open_File) return File_Types.File_Type'Class;
 
 private
   type Open_File is new File_Type with null record;
